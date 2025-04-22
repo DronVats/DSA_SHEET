@@ -6,6 +6,7 @@ class Solution {
         int maxi = INT_MIN;
         int n = arr.size();
         pair<int,int> p ;
+      // method 1
         // for(int i=0;i<n;i++){
         //     if(mini > arr[i]){
         //         mini = arr[i];
@@ -16,7 +17,8 @@ class Solution {
              
         // }
         // return {mini,maxi};
-        
+
+      // Method 2
         for(int i=0;i<n;i++){
             mini = min(arr[i],mini);
             maxi = max(arr[i],maxi);
